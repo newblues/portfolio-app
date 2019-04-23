@@ -1,33 +1,95 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+:root {
+  --main-color:#EF626C; 
+  --white-color:#FEFEFF;
+  --brown-color: #251605;
+  --grey-color:#AB9B96;
+  --silver-color: #848C8E; 
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+*{
+  scroll-behavior: smooth;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body{
+  margin: 0;
+  padding: 0;
+  background-color: var(--silver-color);
+  font-family: Montserrat, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+#navbar {
+  transition: 0.8s
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a{
+  color: var(--main-color); 
 }
+
+.link{
+  color: var(--brown-color); 
+  margin: 0px 25px 0px 0px;
+
+}
+
+.link:hover{
+  color: var(--silver-color);
+}
+
+p{
+  color: var(--grey-color);
+  font-size: 14;
+}
+
+
+.projectImg:hover{
+  opacity: 0.5;
+};
+
+.projectImg:hover{
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.sectionTitle:after{
+  content: '';
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 2px;
+  width: 80px;
+  background: var(--grey-color);
+ }
+.sectionTitle{
+  font-size: 40px;
+  margin: 25px 0 50px 0;
+  color: var(--brown-color);
+}
+
+.sectionSubtitle{
+  position : relative;
+  font-size: 20px;
+  margin: 25px 0 25px 0;
+  color: var(--brown-color);
+} 
+
+.rowPorfolio{
+  margin-bottom:50px; 
+}
+
+.sectionSubtitle:after{
+  content: '';
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 2px;
+  width: 30px;
+  background: var(--grey-color);
+ };
+
+
