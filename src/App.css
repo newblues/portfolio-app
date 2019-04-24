@@ -78,7 +78,7 @@ p {
   transform: translate(-50%, -50%);
   height: 2px;
   width: 80px;
-  background: var(--grey-color);
+  background: var(--blue-color);
 }
 .sectionTitle {
   font-size: 40px;
@@ -106,7 +106,7 @@ p {
   transform: translate(-50%, -50%);
   height: 2px;
   width: 30px;
-  background: var(--grey-color);
+  background: var(--blue-color);
 }
 
 li {
