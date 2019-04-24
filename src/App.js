@@ -24,9 +24,9 @@ class App extends Component {
 
     // TOGGLE NAV BAR ON SCROLL
     var prevScrollpos = window.pageYOffset;
-    var windowWidth = document.documentElement.clientHeight;
+    var clientWidth = document.documentElement.clientWidth;
 
-    if (windowWidth > 768) {
+    if (clientWidth > 768) {
       window.onscroll = function() {
         var currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
@@ -40,7 +40,7 @@ class App extends Component {
   }
 
   render() {
-    console.log(document.documentElement.clientHeight);
+    console.log(document.documentElement.clientWidth);
     return (
       <Provider store={store}>
         <Router>
