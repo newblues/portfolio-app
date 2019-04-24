@@ -32,7 +32,7 @@ class Skills extends Component {
               <p style={style.p}>CSS, Sass</p>
             </Col>
             <Col style={style.col} xs='12' sm='4'>
-              <ScrollAnimation animateIn='bounceIn'>
+              <ScrollAnimation className='sm-mt' animateIn='bounceIn'>
                 <img
                   style={style.logo}
                   src={require('../images/database.svg')}
@@ -46,7 +46,7 @@ class Skills extends Component {
               <p style={style.p}>Cloudinary</p>
             </Col>
             <Col style={style.col} xs='12' sm='4'>
-              <ScrollAnimation animateIn='bounceIn'>
+              <ScrollAnimation className='sm-mt' animateIn='bounceIn'>
                 <img
                   style={style.logo}
                   src={require('../images/settings.svg')}

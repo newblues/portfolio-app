@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router} from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import './App.css';
 import './animate.css';
@@ -24,19 +24,23 @@ class App extends Component {
 
     // TOGGLE NAV BAR ON SCROLL
     var prevScrollpos = window.pageYOffset;
+    var windowWidth = document.documentElement.clientHeight;
 
-    window.onscroll = function() {
-      var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById('navbar').style.top = '0';
-      } else {
-        document.getElementById('navbar').style.top = '-5em';
-      }
-      prevScrollpos = currentScrollPos;
-    };
+    if (windowWidth > 768) {
+      window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById('navbar').style.top = '0';
+        } else {
+          document.getElementById('navbar').style.top = '-5em';
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    }
   }
 
   render() {
+    console.log(document.documentElement.clientHeight);
     return (
       <Provider store={store}>
         <Router>
@@ -45,7 +49,7 @@ class App extends Component {
             <Home />
             <AboutMe />
             <Skills />
-            <Portfolio/>
+            <Portfolio />
           </div>
         </Router>
       </Provider>

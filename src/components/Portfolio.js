@@ -20,10 +20,11 @@ class Porfolio extends Component {
 
           <Row className='rowPorfolio'>
             <Col
-              xs='12' md='6'
+              xs='12'
+              md='6'
               className='d-flex justify-content-center align-items-center'
             >
-              <ScrollAnimation animateIn='fadeInLeft'>
+              <ScrollAnimation className='md-mb' animateIn='fadeInLeft'>
                 <div className='shadow rounded projectImg'>
                   <img
                     className='projectImg'
@@ -35,7 +36,8 @@ class Porfolio extends Component {
               </ScrollAnimation>
             </Col>
             <Col
-              xs='12' md='6'
+              xs='12'
+              md='6'
               className='d-flex flex-column justify-content-center align-items-center'
             >
               <div style={style.header}>
@@ -79,7 +81,8 @@ class Porfolio extends Component {
           </Row>
           <Row>
             <Col
-              xs='12' md='6'
+              xs='12'
+              md='6'
               className='d-flex flex-column justify-content-center align-items-center'
             >
               <div style={style.header}>
@@ -121,10 +124,11 @@ class Porfolio extends Component {
               </div>
             </Col>
             <Col
-              xs='12' md='6'
+              xs='12'
+              md='6'
               className='d-flex justify-content-center align-items-center'
             >
-              <ScrollAnimation animateIn='fadeInRight'>
+              <ScrollAnimation className='md-mt' animateIn='fadeInRight'>
                 <div className='shadow rounded projectImg'>
                   <img
                     className='projectImg'

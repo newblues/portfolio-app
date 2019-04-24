@@ -1,18 +1,18 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 :root {
-  --main-color:#EF626C; 
-  --white-color:#FEFEFF;
+  --main-color: #ef626c;
+  --white-color: #fefeff;
   --brown-color: #251605;
-  --grey-color:#AB9B96;
-  --silver-color: #848C8E; 
+  --grey-color: #ab9b96;
+  --silver-color: #848c8e;
 }
 
-*{
+* {
   scroll-behavior: smooth;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
   background-color: var(--silver-color);
@@ -20,76 +20,96 @@ body{
 }
 
 #navbar {
-  transition: 0.8s
+  transition: 0.8s;
 }
 
-a{
-  color: var(--main-color); 
+a {
+  color: var(--main-color);
 }
 
-.link{
-  color: var(--brown-color); 
+.link {
+  color: var(--brown-color);
   margin: 0px 25px 0px 0px;
-
 }
 
-.link:hover{
+.link:hover {
   color: var(--silver-color);
 }
 
-p{
+p {
   color: var(--grey-color);
   font-size: 14;
 }
 
-
-.projectImg:hover{
+.projectImg:hover {
   opacity: 0.5;
-};
-
-.projectImg:hover{
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
 }
 
-.sectionTitle:after{
+.projectImg:hover {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.sectionTitle:after {
   content: '';
   position: absolute;
   top: 70%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   height: 2px;
   width: 80px;
   background: var(--grey-color);
- }
-.sectionTitle{
+}
+.sectionTitle {
   font-size: 40px;
   margin: 25px 0 50px 0;
   color: var(--brown-color);
 }
 
-.sectionSubtitle{
-  position : relative;
+.sectionSubtitle {
+  position: relative;
   font-size: 20px;
   margin: 25px 0 25px 0;
   color: var(--brown-color);
-} 
-
-.rowPorfolio{
-  margin-bottom:50px; 
 }
 
-.sectionSubtitle:after{
+.rowPorfolio {
+  margin-bottom: 50px;
+}
+
+.sectionSubtitle:after {
   content: '';
   position: absolute;
   top: 120%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   height: 2px;
   width: 30px;
   background: var(--grey-color);
- };
+}
 
+li {
+  margin-left: 15px;
+}
 
+@media only screen and (max-width: 576px) {
+  .sm-mt {
+    margin-top: 25px;
+  }
+
+  .sm-mb {
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .md-mt {
+    margin-top: 25px;
+  }
+
+  .md-mb {
+    margin-bottom: 25px;
+  }
+}

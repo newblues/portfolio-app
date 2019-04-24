@@ -61,7 +61,7 @@ class AboutMe extends Component {
               />
             </Col>
             <Col xs='12' md='4' className='text-center'>
-              <ScrollAnimation animateIn='bounceIn'>
+              <ScrollAnimation className='mt' animateIn='bounceIn'>
                 <img
                   style={style.logo}
                   src={require('../images/resume.svg')}
