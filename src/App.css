@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 :root {
-  --main-color: #ef626c;
-  --white-color: #fefeff;
+  --main-color: #a7cfe8;
+  --blue-color: #315e8b;
+  --white-color: #efefef;
   --brown-color: #251605;
   --grey-color: #ab9b96;
   --silver-color: #848c8e;
+  --green-color: #afddb5;
 }
 
 * {
@@ -15,7 +17,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--silver-color);
+  background-color: red;
+  color: red;
   font-family: Montserrat, sans-serif;
 }
 
