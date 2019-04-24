@@ -36,6 +36,22 @@ a {
   color: var(--silver-color);
 }
 
+.home {
+  position: relative;
+  height: 95vh;
+  background-image: url('./images/laptop.png');
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--brown-color);
+  font-family: Montserrat;
+}
+
 p {
   color: var(--grey-color);
   font-size: 14;
