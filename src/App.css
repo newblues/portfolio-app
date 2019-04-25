@@ -26,7 +26,7 @@ body {
 }
 
 a {
-  color: var(--main-color);
+  color: var(--brown-color) !important;
 }
 
 .link {
@@ -69,6 +69,14 @@ p {
 .projectImg:hover {
   -webkit-transform: scale(1.03);
   transform: scale(1.03);
+}
+
+.button {
+  background: white !important;
+}
+
+.button:hover {
+  background: var(--blue-color) !important;
 }
 
 .sectionTitle:after {

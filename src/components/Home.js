@@ -50,7 +50,7 @@ class Home extends React.Component {
               onClick={this.handleClick}
               outline
               color="secondary"
-              className="shadow p-2 rounded btn-block bg-light"
+              className="shadow p-2 rounded btn-block button"
             >
               Français
             </Button>
@@ -59,8 +59,7 @@ class Home extends React.Component {
               value="en"
               onClick={this.handleClick}
               outline
-              color="secondary"
-              className="shadow p-2 rounded btn-block "
+              className="shadow p-2 rounded btn-block button"
             >
               English
             </Button>

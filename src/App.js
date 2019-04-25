@@ -9,6 +9,7 @@ import Home from './components/Home';
 import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
 import Portfolio from './components/Portfolio';
+import Footer from './components/Footer';
 
 // REDUCERS
 import language from './Reducers/language.reducer';
@@ -44,12 +45,13 @@ class App extends Component {
     return (
       <Provider store={store}>
         <Router>
-          <div className='app'>
-            <NavBar id='navbar' />
+          <div className="app">
+            <NavBar id="navbar" />
             <Home />
             <AboutMe />
             <Skills />
             <Portfolio />
+            <Footer />
           </div>
         </Router>
       </Provider>

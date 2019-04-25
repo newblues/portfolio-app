@@ -49,10 +49,10 @@ class Porfolio extends Component {
                   Javascript, ReactJS, JSX, Express, MongoDB, Rest API{' '}
                 </p>
                 <div style={style.projectbuttons}>
-                  <Button outline color="secondary" className="shadow p-2 rounded">
+                  <Button outline color="secondary" className="shadow p-2 rounded button">
                     View Live Demo
                   </Button>{' '}
-                  <Button outline color="secondary" className="shadow p-2 rounded">
+                  <Button outline color="secondary" className="shadow p-2 rounded button">
                     View on Github
                   </Button>{' '}
                 </div>
@@ -77,7 +77,7 @@ class Porfolio extends Component {
                   CSS, BootStrap, Javascript, JQuery, MongoDB, Rest Api (Open Weather Map, LeafLet){' '}
                 </p>
                 <div style={style.projectbuttons}>
-                  <Button outline color="secondary" className="shadow p-2 rounded">
+                  <Button outline color="secondary" className="shadow p-2 rounded button">
                     View Live Demo
                   </Button>{' '}
                   <Button
@@ -85,7 +85,7 @@ class Porfolio extends Component {
                     target="_blank"
                     outline
                     color="secondary"
-                    className="shadow p-2 rounded"
+                    className="shadow p-2 rounded button"
                   >
                     View on Github
                   </Button>{' '}
