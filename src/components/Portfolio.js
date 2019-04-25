@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
 
 import ScrollAnimation from 'react-animate-on-scroll';
+import { connect } from 'react-redux';
 
 import '../App.css';
 
-import colors from '../config.js';
-
 class Porfolio extends Component {
   render() {
+    const { language } = this.props;
     return (
       <div style={style.container} id="portfolio">
         <Container>
@@ -42,21 +42,39 @@ class Porfolio extends Component {
                 </ScrollAnimation>
                 <h4 className="sectionSubtitle">My Movies</h4>
               </div>
-              <div className="project">
-                <p className="text-center">
-                  My movies is a web-app single page for viewing last movies release in real-time,
-                  and allow you to add your favorite movies in your dashboard. Build Tools :
-                  Javascript, ReactJS, JSX, Express, MongoDB, Rest API{' '}
-                </p>
-                <div style={style.projectbuttons}>
-                  <Button outline color="secondary" className="shadow p-2 rounded button">
-                    View Live Demo
-                  </Button>{' '}
-                  <Button outline color="secondary" className="shadow p-2 rounded button">
-                    View on Github
-                  </Button>{' '}
+              {language === 'fr' ? (
+                <div className="project">
+                  <p className="text-center">
+                    My movies est une application Web single page qui permet de voir les dernières
+                    sorties cinématographiques en temps réel et de gérer ses films favories. Stack
+                    Front et Back: Javascript, ReactJS, JSX, Express, MongoDB, Rest API{' '}
+                  </p>
+                  <div style={style.projectbuttons}>
+                    <Button outline color="secondary" className="shadow p-2 rounded button">
+                      Voir la démo
+                    </Button>{' '}
+                    <Button outline color="secondary" className="shadow p-2 rounded button">
+                      Voir sur Github
+                    </Button>{' '}
+                  </div>
                 </div>
-              </div>
+              ) : (
+                <div className="project">
+                  <p className="text-center">
+                    My movies is a single page web-app for viewing last movies release in real-time,
+                    and allow you to manage your favorites movies. Stack Front and Back :
+                    Javascript, ReactJS, JSX, Express, MongoDB, Rest API{' '}
+                  </p>
+                  <div style={style.projectbuttons}>
+                    <Button outline color="secondary" className="shadow p-2 rounded button">
+                      View Live Demo
+                    </Button>{' '}
+                    <Button outline color="secondary" className="shadow p-2 rounded button">
+                      View on Github
+                    </Button>{' '}
+                  </div>
+                </div>
+              )}
             </Col>
           </Row>
           <Row>
@@ -71,26 +89,45 @@ class Porfolio extends Component {
                 </ScrollAnimation>
                 <h4 className="sectionSubtitle">Weather App</h4>
               </div>
-              <div className="project">
-                <p className="text-center">
-                  Weather App is a web-app for viewing weather in real-time. Build Tools : HTML,
-                  CSS, BootStrap, Javascript, JQuery, MongoDB, Rest Api (Open Weather Map, LeafLet){' '}
-                </p>
-                <div style={style.projectbuttons}>
-                  <Button outline color="secondary" className="shadow p-2 rounded button">
-                    View Live Demo
-                  </Button>{' '}
-                  <Button
-                    href="https://github.com/newblues/weather-app"
-                    target="_blank"
-                    outline
-                    color="secondary"
-                    className="shadow p-2 rounded button"
-                  >
-                    View on Github
-                  </Button>{' '}
+              {language === 'fr' ? (
+                <div className="project">
+                  <p className="text-center">
+                    Weather App est une application Web de météo en temps-réel. Permet d'ajouter une
+                    ville et de positioner un marker sur la carte. Stack Front et Back : HTML, CSS,
+                    BootStrap, Javascript, JQuery, MongoDB, Rest Api (Open Weather Map, LeafLet){' '}
+                  </p>
+                  <div style={style.projectbuttons}>
+                    <Button outline color="secondary" className="shadow p-2 rounded button">
+                      Voir la démo
+                    </Button>{' '}
+                    <Button outline color="secondary" className="shadow p-2 rounded button">
+                      Voir sur Github
+                    </Button>{' '}
+                  </div>
                 </div>
-              </div>
+              ) : (
+                <div className="project">
+                  <p className="text-center">
+                    Weather App is a web-app for viewing weather in real-time. Allow you to add a
+                    town and put a marker on the map. Stack Front and Back : HTML, CSS, BootStrap,
+                    Javascript, JQuery, MongoDB, Rest Api (Open Weather Map, LeafLet){' '}
+                  </p>
+                  <div style={style.projectbuttons}>
+                    <Button outline color="secondary" className="shadow p-2 rounded button">
+                      View Live Demo
+                    </Button>{' '}
+                    <Button
+                      href="https://github.com/newblues/weather-app"
+                      target="_blank"
+                      outline
+                      color="secondary"
+                      className="shadow p-2 rounded button"
+                    >
+                      View on Github
+                    </Button>{' '}
+                  </div>
+                </div>
+              )}
             </Col>
             <Col xs="12" md="6" className="d-flex justify-content-center align-items-center">
               <ScrollAnimation className="md-mt" animateIn="fadeInRight">
@@ -144,4 +181,13 @@ const style = {
   },
 };
 
-export default Porfolio;
+function mapStateToProps(state) {
+  return {
+    language: state.language,
+  };
+}
+
+export default connect(
+  mapStateToProps,
+  null,
+)(Porfolio);

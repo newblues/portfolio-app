@@ -5,19 +5,7 @@ import { connect } from 'react-redux';
 
 import { HashLink as Link } from 'react-router-hash-link';
 
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
-} from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem } from 'reactstrap';
 
 const style = {
   container: {
@@ -25,11 +13,11 @@ const style = {
     fontSize: '14px',
     fontWeight: 'bold',
     width: '100%',
-    zIndex: '1000'
+    zIndex: '1000',
   },
   logo: {
-    color: colors.brownColor
-  }
+    color: colors.brownColor,
+  },
 };
 
 class NavBar extends React.Component {
@@ -37,13 +25,13 @@ class NavBar extends React.Component {
     super(props);
     this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpen: false
+      isOpen: false,
     };
   }
 
   toggle() {
     this.setState({
-      isOpen: !this.state.isOpen
+      isOpen: !this.state.isOpen,
     });
   }
   render() {
@@ -51,37 +39,36 @@ class NavBar extends React.Component {
 
     return (
       <Navbar
-        id='navbar'
+        id="navbar"
         style={style.container}
-        className='fixed-top animated fadeInDown delay-0.8s'
-        color='light'
+        className="fixed-top animated fadeInDown delay-0.8s"
+        color="light"
         light
-        expand='md'
+        expand="md"
       >
-        <NavbarBrand className='link' href='/'>
+        <NavbarBrand className="link" href="/">
           〈 A.S 〉
         </NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
         <Collapse isOpen={this.state.isOpen} navbar>
-          <Nav className='ml-auto' navbar>
+          <Nav className="ml-auto" navbar>
             <NavItem>
-              <Link className='link' to='/#home'>
-              {language == 'fr' ? 'Accueil' : 'Home'}
+              <Link className="link" to="/#home">
+                {language === 'fr' ? 'Accueil' : 'Home'}
               </Link>
             </NavItem>
             <NavItem>
-              <Link className='link' to='/#aboutme'>
-                {language == 'fr' ? 'A propos' : 'About me'}
+              <Link className="link" to="/#aboutme">
+                {language === 'fr' ? 'A propos' : 'About me'}
               </Link>
             </NavItem>
             <NavItem>
-              <Link className='link' to='/#skills'>
-              {language == 'fr' ? 'Compétences' : 'Skills'}
-
+              <Link className="link" to="/#skills">
+                {language === 'fr' ? 'Compétences' : 'Skills'}
               </Link>
             </NavItem>
             <NavItem>
-              <Link className='link' to='/#portfolio'>
+              <Link className="link" to="/#portfolio">
                 Portfolio
               </Link>
             </NavItem>
@@ -94,11 +81,11 @@ class NavBar extends React.Component {
 
 function mapStateToProps(state) {
   return {
-    language: state.language
+    language: state.language,
   };
 }
 
 export default connect(
   mapStateToProps,
-  null
+  null,
 )(NavBar);

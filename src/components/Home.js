@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import '../App.css';
-
 import { connect } from 'react-redux';
 import { Button } from 'reactstrap';
 
-import bg from '../images/laptop.png';
-
-class Home extends React.Component {
+class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -17,8 +14,6 @@ class Home extends React.Component {
   componentDidUpdate(prevProps, prevState) {
     if (prevProps.language !== this.props.language) {
       this.setState({ language: this.props.language });
-      console.log('TCL: Home -> constructor -> state.language', this.state.language);
-      console.log('TCL: Home -> this.props.language', this.props.language);
     }
   }
 
@@ -44,7 +39,7 @@ class Home extends React.Component {
           </div>
         </div>
         <div style={style.buttonContainer}>
-          {this.state.language == 'en' ? (
+          {this.state.language === 'en' ? (
             <Button
               value="fr"
               onClick={this.handleClick}
@@ -71,24 +66,6 @@ class Home extends React.Component {
 }
 
 const style = {
-  // container: {
-  //   position: 'relative',
-  //   // height: 'calc(100vh - 50px)',
-  //   height: '95vh',
-  //   background:
-  //     'linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), `url(${bg})`',
-  //   backgroundImage: `url(${bg})`,
-  //   backgroundSize: 'cover',
-  //   backgroundPosition: 'center',
-  //   backgroundAttachment: 'fixed',
-  //   clipPath: 'polygon(0 0, 100% 0, 100% 80vh, 0 100%)',
-  //   display: 'flex',
-  //   flexDirection: 'column',
-  //   justifyContent: 'center',
-  //   alignItems: 'center',
-  //   color: 'white',
-  //   fontFamily: 'Montserrat',
-  // },
   buttonContainer: {
     width: 100,
     position: 'absolute',

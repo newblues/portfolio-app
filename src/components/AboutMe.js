@@ -19,7 +19,7 @@ class AboutMe extends Component {
         <Container>
           <Row>
             <Col xs="12" className="text-center">
-              {language == 'fr' ? (
+              {language === 'fr' ? (
                 <h3 className="sectionTitle">A propos</h3>
               ) : (
                 <h3 className="sectionTitle">About me</h3>
