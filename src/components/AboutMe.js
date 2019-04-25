@@ -28,7 +28,7 @@ class AboutMe extends Component {
           </Row>
 
           <Row>
-            <Col xs="12" sm="4" className="text-center flex-column justify-content-center">
+            <Col xs="12" md="4" className="text-center flex-column justify-content-center">
               <ScrollAnimation animateIn="bounceIn">
                 <img style={style.logo} src={require('../images/story.svg')} alt="Logo" />
               </ScrollAnimation>
@@ -44,7 +44,7 @@ class AboutMe extends Component {
                 </div>
               )}
             </Col>
-            <Col xs="12" sm="4" className="text-center">
+            <Col xs="12" md="4" className="text-center">
               <img
                 className="shadow rounded rounded-circle"
                 style={style.image}

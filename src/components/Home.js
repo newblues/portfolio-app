@@ -107,8 +107,8 @@ const style = {
   },
   subTitle: {
     fontSize: 17,
-    fontWeight: 400,
-    letterSpacing: 8,
+    fontWeight: 500,
+    letterSpacing: 7,
     textAlign: 'center',
   },
   arrow: {

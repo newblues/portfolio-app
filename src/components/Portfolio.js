@@ -10,69 +10,49 @@ import colors from '../config.js';
 class Porfolio extends Component {
   render() {
     return (
-      <div style={style.container} id='portfolio'>
+      <div style={style.container} id="portfolio">
         <Container>
           <Row>
-            <Col xs='12' className='text-center'>
-              <h3 className='sectionTitle'>Portfolio </h3>
+            <Col xs="12" className="text-center">
+              <h3 className="sectionTitle">Portfolio </h3>
             </Col>
           </Row>
 
-          <Row className='rowPorfolio'>
-            <Col
-              xs='12'
-              md='6'
-              className='d-flex justify-content-center align-items-center'
-            >
-              <ScrollAnimation className='md-mb' animateIn='fadeInLeft'>
-                <div className='shadow rounded projectImg'>
+          <Row className="rowPorfolio">
+            <Col xs="12" md="6" className="d-flex justify-content-center align-items-center">
+              <ScrollAnimation className="md-mb" animateIn="fadeInLeft">
+                <div className="shadow rounded projectImg">
                   <img
-                    className='projectImg'
+                    className="projectImg"
                     style={style.img}
-                    src='https://picsum.photos/1000?image=20'
-                    alt='Logo'
+                    src={require('../images/mymoviesapp.png')}
+                    alt="Logo"
                   />
                 </div>
               </ScrollAnimation>
             </Col>
             <Col
-              xs='12'
-              md='6'
-              className='d-flex flex-column justify-content-center align-items-center'
+              xs="12"
+              md="6"
+              className="d-flex flex-column justify-content-center align-items-center"
             >
               <div style={style.header}>
-                <ScrollAnimation animateIn='bounceIn'>
-                  <img
-                    style={style.logo}
-                    src={require('../images/programming.svg')}
-                    alt='Logo'
-                  />
+                <ScrollAnimation animateIn="bounceIn">
+                  <img style={style.logo} src={require('../images/programming.svg')} alt="Logo" />
                 </ScrollAnimation>
-                <h4 className='sectionSubtitle'>Project 1</h4>
+                <h4 className="sectionSubtitle">My Movies</h4>
               </div>
-              <div className='project'>
-                <p className='text-center'>
-                  JSON Viewer is a web-based single page tool for viewing,
-                  formatting, and validating JSON and some advance features like
-                  loading external json api urls and error handling. It also
-                  gives developers the ability to generate the path to any value
-                  with a single click. Build Tools : Jsx, React, jest and
-                  enzyme, Css(SASS, SMACSS Architecture), @react-ace Editor, NPM
-                  , YARN, babel, etc.
+              <div className="project">
+                <p className="text-center">
+                  My movies is a web-app single page for viewing last movies release in real-time,
+                  and allow you to add your favorite movies in your dashboard. Build Tools :
+                  Javascript, ReactJS, JSX, Express, MongoDB, Rest API{' '}
                 </p>
                 <div style={style.projectbuttons}>
-                  <Button
-                    outline
-                    color='secondary'
-                    className='shadow p-2 rounded'
-                  >
+                  <Button outline color="secondary" className="shadow p-2 rounded">
                     View Live Demo
                   </Button>{' '}
-                  <Button
-                    outline
-                    color='secondary'
-                    className='shadow p-2 rounded'
-                  >
+                  <Button outline color="secondary" className="shadow p-2 rounded">
                     View on Github
                   </Button>{' '}
                 </div>
@@ -81,60 +61,45 @@ class Porfolio extends Component {
           </Row>
           <Row>
             <Col
-              xs='12'
-              md='6'
-              className='d-flex flex-column justify-content-center align-items-center'
+              xs="12"
+              md="6"
+              className="d-flex flex-column justify-content-center align-items-center"
             >
               <div style={style.header}>
-                <ScrollAnimation animateIn='bounceIn'>
-                  <img
-                    style={style.logo}
-                    src={require('../images/programming.svg')}
-                    alt='Logo'
-                  />
+                <ScrollAnimation animateIn="bounceIn">
+                  <img style={style.logo} src={require('../images/programming.svg')} alt="Logo" />
                 </ScrollAnimation>
-                <h4 className='sectionSubtitle'>Project 1</h4>
+                <h4 className="sectionSubtitle">Weather App</h4>
               </div>
-              <div className='project'>
-                <p className='text-center'>
-                  JSON Viewer is a web-based single page tool for viewing,
-                  formatting, and validating JSON and some advance features like
-                  loading external json api urls and error handling. It also
-                  gives developers the ability to generate the path to any value
-                  with a single click. Build Tools : Jsx, React, jest and
-                  enzyme, Css(SASS, SMACSS Architecture), @react-ace Editor, NPM
-                  , YARN, babel, etc.
+              <div className="project">
+                <p className="text-center">
+                  Weather App is a web-app for viewing weather in real-time. Build Tools : HTML,
+                  CSS, BootStrap, Javascript, JQuery, MongoDB, Rest Api (Open Weather Map, LeafLet){' '}
                 </p>
                 <div style={style.projectbuttons}>
-                  <Button
-                    outline
-                    color='secondary'
-                    className='shadow p-2 rounded'
-                  >
+                  <Button outline color="secondary" className="shadow p-2 rounded">
                     View Live Demo
                   </Button>{' '}
                   <Button
+                    href="https://github.com/newblues/weather-app"
+                    target="_blank"
                     outline
-                    color='secondary'
-                    className='shadow p-2 rounded'
+                    color="secondary"
+                    className="shadow p-2 rounded"
                   >
                     View on Github
                   </Button>{' '}
                 </div>
               </div>
             </Col>
-            <Col
-              xs='12'
-              md='6'
-              className='d-flex justify-content-center align-items-center'
-            >
-              <ScrollAnimation className='md-mt' animateIn='fadeInRight'>
-                <div className='shadow rounded projectImg'>
+            <Col xs="12" md="6" className="d-flex justify-content-center align-items-center">
+              <ScrollAnimation className="md-mt" animateIn="fadeInRight">
+                <div className="shadow rounded projectImg">
                   <img
-                    className='projectImg'
+                    className="projectImg"
                     style={style.img}
-                    src='https://picsum.photos/1000?image=20'
-                    alt='Logo'
+                    src={require('../images/weatherapp.png')}
+                    alt="Logo"
                   />
                 </div>
               </ScrollAnimation>
@@ -154,29 +119,29 @@ const style = {
     justifyContent: 'center',
     marginTop: 50,
     marginBottom: 50,
-    fontFamily: 'Montserrat'
+    fontFamily: 'Montserrat',
   },
   containerImg: {
-    boxShadow: '5px 5px 5px #9E9E9E'
+    boxShadow: '5px 5px 5px #9E9E9E',
   },
   header: {
     width: '100%',
     display: 'flex',
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
   logo: {
     width: 50,
-    margin: '0px 20px 20px 0px'
+    margin: '0px 20px 20px 0px',
   },
   img: {
-    height: 200,
-    width: 300
+    height: 'auto',
+    width: 350,
   },
   projectbuttons: {
     display: 'flex',
     justifyContent: 'space-around',
-    marginTop: 25
-  }
+    marginTop: 25,
+  },
 };
 
 export default Porfolio;
