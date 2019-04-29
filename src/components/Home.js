@@ -11,14 +11,13 @@ class Home extends Component {
     };
   }
 
-  componentDidUpdate(prevProps, prevState) {
+  componentDidUpdate(prevProps) {
     if (prevProps.language !== this.props.language) {
       this.setState({ language: this.props.language });
     }
   }
 
   handleClick = e => {
-    console.log('je suis dans mon click!!!');
     this.props.setLanguage(e);
     this.setState({
       language: this.props.language,

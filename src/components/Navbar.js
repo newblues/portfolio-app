@@ -27,9 +27,8 @@ class NavBar extends React.Component {
   }
 
   toggle = () => {
-    this.setState({
-      isOpen: !this.state.isOpen,
-    });
+    this.setState(prevState => ({ isOpen: !prevState.isOpen }));
+    // this.setState({isOpen: !this.state.isOpen});
   };
 
   render() {

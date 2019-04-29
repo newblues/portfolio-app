@@ -16,7 +16,7 @@ class Skills extends Component {
         <Container>
           <Row>
             <Col xs="12" className="text-center">
-              <h3 className="sectionTitle">{language === 'fr' ? 'A Compétences' : 'Skills'}</h3>
+              <h3 className="sectionTitle">{language === 'fr' ? 'Compétences' : 'Skills'}</h3>
             </Col>
           </Row>
           <Row>

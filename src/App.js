@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
+// REDUX
+import { Provider } from 'react-redux';
+import { createStore, combineReducers } from 'redux';
 
 import './App.css';
 import './animate.css';
@@ -14,9 +17,6 @@ import Footer from './components/Footer';
 // REDUCERS
 import language from './Reducers/language.reducer';
 
-// REDUX
-import { Provider } from 'react-redux';
-import { createStore, combineReducers } from 'redux';
 const store = createStore(combineReducers({ language }));
 
 class App extends Component {
@@ -24,12 +24,12 @@ class App extends Component {
     super(props);
 
     // TOGGLE NAV BAR ON SCROLL
-    var prevScrollpos = window.pageYOffset;
-    var clientWidth = document.documentElement.clientWidth;
+    let prevScrollpos = window.pageYOffset;
+    const { clientWidth } = document.documentElement;
 
     if (clientWidth > 768) {
       window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
+        const currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
           document.getElementById('navbar').style.top = '0';
         } else {
@@ -41,7 +41,6 @@ class App extends Component {
   }
 
   render() {
-    console.log(document.documentElement.clientWidth);
     return (
       <Provider store={store}>
         <Router>
