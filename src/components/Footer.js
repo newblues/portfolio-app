@@ -1,14 +1,9 @@
 import React from 'react';
 
-const Footer = props => {
+const Footer = () => {
   return (
     <div style={style.container}>
-      <p>Credit photo: &nbsp;</p>
-
-      <a href="https://pixabay.com/fr/users/Sara_Torda-888816/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2298286">
-        {' '}
-        Sara Torda
-      </a>
+      <p>Copyright © - 2019〈 A.S 〉</p>
     </div>
   );
 };

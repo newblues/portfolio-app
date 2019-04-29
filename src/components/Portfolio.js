@@ -1,3 +1,4 @@
+/* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
 
@@ -46,7 +47,7 @@ class Porfolio extends Component {
                 <div className="project">
                   <p className="text-center">
                     My movies est une application Web single page qui permet de voir les dernières
-                    sorties cinématographiques en temps réel et de gérer ses films favories. Stack
+                    sorties cinématographiques en temps réel et de gérer ses films favoris. Stack
                     Front et Back: Javascript, ReactJS, JSX, Express, MongoDB, Rest API{' '}
                   </p>
                   <div style={style.projectbuttons}>

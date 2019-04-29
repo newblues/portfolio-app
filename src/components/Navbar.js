@@ -1,11 +1,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import colors from '../config.js';
 import { connect } from 'react-redux';
-
 import { HashLink as Link } from 'react-router-hash-link';
-
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem } from 'reactstrap';
+import colors from '../config';
 
 const style = {
   container: {
@@ -23,19 +21,20 @@ const style = {
 class NavBar extends React.Component {
   constructor(props) {
     super(props);
-    this.toggle = this.toggle.bind(this);
     this.state = {
       isOpen: false,
     };
   }
 
-  toggle() {
+  toggle = () => {
     this.setState({
       isOpen: !this.state.isOpen,
     });
-  }
+  };
+
   render() {
     const { language } = this.props;
+    const { isOpen } = this.state;
 
     return (
       <Navbar
@@ -50,7 +49,7 @@ class NavBar extends React.Component {
           〈 A.S 〉
         </NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
-        <Collapse isOpen={this.state.isOpen} navbar>
+        <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
               <Link className="link" to="/#home">

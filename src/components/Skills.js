@@ -1,17 +1,22 @@
+/* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import { connect } from 'react-redux';
+
 import ScrollAnimation from 'react-animate-on-scroll';
 
 import '../App.css';
 
 class Skills extends Component {
   render() {
+    const { language } = this.props;
+
     return (
       <div style={style.container} id="skills">
         <Container>
           <Row>
             <Col xs="12" className="text-center">
-              <h3 className="sectionTitle">Compétences</h3>
+              <h3 className="sectionTitle">{language === 'fr' ? 'A Compétences' : 'Skills'}</h3>
             </Col>
           </Row>
           <Row>
@@ -19,7 +24,6 @@ class Skills extends Component {
               <ScrollAnimation animateIn="bounceIn">
                 <img style={style.logo} src={require('../images/coding.svg')} alt="Logo" />
               </ScrollAnimation>
-
               <h4 className="sectionSubtitle">Front-End</h4>
               <p style={style.p}>React JS, React Native, Expo</p>
               <p style={style.p}>Redux</p>
@@ -77,4 +81,13 @@ const style = {
   },
 };
 
-export default Skills;
+function mapStateToProps(state) {
+  return {
+    language: state.language,
+  };
+}
+
+export default connect(
+  mapStateToProps,
+  null,
+)(Skills);

@@ -1,12 +1,12 @@
+/* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import { connect } from 'react-redux';
+
 import ScrollAnimation from 'react-animate-on-scroll';
-import colors from '../config.js';
+import colors from '../config';
 
 import '../App.css';
-import '../config.js';
-
-import { connect } from 'react-redux';
 
 const email = 'anto.sauvage@gmail.com';
 
@@ -59,7 +59,6 @@ class AboutMe extends Component {
               {language === 'fr' ? (
                 <div>
                   <h4 className="sectionSubtitle">Informations </h4>
-
                   <p style={style.infoText}>Nom : Antoine Sauvage</p>
                   <p style={style.infoText}>Age : 35 ans</p>
                   <p style={style.infoText}>Tel : 06 88 84 71 10</p>

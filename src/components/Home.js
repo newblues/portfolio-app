@@ -26,6 +26,7 @@ class Home extends Component {
   };
 
   render() {
+    const { language } = this.state;
     return (
       <div>
         <div id="home" className="home">
@@ -39,7 +40,7 @@ class Home extends Component {
           </div>
         </div>
         <div style={style.buttonContainer}>
-          {this.state.language === 'en' ? (
+          {language === 'en' ? (
             <Button
               value="fr"
               onClick={this.handleClick}
@@ -103,8 +104,6 @@ const style = {
     paddingBottom: '50px',
     paddingRight: '50px',
     paddingLeft: '50px',
-    // borderBottom: '1px solid',
-    // borderTop: '1px solid',
   },
   vline: {
     position: 'absolute',
