@@ -35,7 +35,12 @@ class AboutMe extends Component {
               {language === 'fr' ? (
                 <div>
                   <h4 className="sectionSubtitle">Mon histoire</h4>
-                  <p>Salut c'est moi!</p>
+                  <p>
+                    Hello World ! Je m'appelle Antoine, passionné de code depuis plusieurs années
+                    j'intègre la Capsule un bootcamp. Apres 10 semaines intensive, 2 mois en tant
+                    que teacher assisant et de live Review, et le lancement d'une applicaiton mobile
+                    avec un associé here i am !
+                  </p>
                 </div>
               ) : (
                 <div>

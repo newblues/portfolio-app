@@ -47,8 +47,10 @@ class Porfolio extends Component {
                 <div className="project">
                   <p className="text-center">
                     My movies est une application Web single page qui permet de voir les dernières
-                    sorties cinématographiques en temps réel et de gérer ses films favoris. Stack
-                    Front et Back: Javascript, ReactJS, JSX, Express, MongoDB, Rest API{' '}
+                    sorties cinématographiques en temps réel et de gérer ses films favoris.
+                  </p>
+                  <p className="text-center">
+                    Javascript, ReactJS, JSX, Express, MongoDB, Rest API.{' '}
                   </p>
                   <div style={style.projectbuttons}>
                     <Button outline color="secondary" className="shadow p-2 rounded button">
@@ -63,8 +65,11 @@ class Porfolio extends Component {
                 <div className="project">
                   <p className="text-center">
                     My movies is a single page web-app for viewing last movies release in real-time,
-                    and allow you to manage your favorites movies. Stack Front and Back :
-                    Javascript, ReactJS, JSX, Express, MongoDB, Rest API{' '}
+                    and allow you to manage your favorites movies.
+                  </p>
+                  <p className="text-center">
+                    {' '}
+                    Javascript, ReactJS, JSX, Express, MongoDB, Rest API.{' '}
                   </p>
                   <div style={style.projectbuttons}>
                     <Button outline color="secondary" className="shadow p-2 rounded button">
@@ -94,8 +99,11 @@ class Porfolio extends Component {
                 <div className="project">
                   <p className="text-center">
                     Weather App est une application Web de météo en temps-réel. Permet d'ajouter une
-                    ville et de positioner un marker sur la carte. Stack Front et Back : HTML, CSS,
-                    BootStrap, Javascript, JQuery, MongoDB, Rest Api (Open Weather Map, LeafLet){' '}
+                    ville et de positioner un marker sur la carte.
+                  </p>
+                  <p className="text-center">
+                    HTML, CSS, BootStrap, Javascript, JQuery, MongoDB, Rest Api (Open Weather Map,
+                    LeafLet).{' '}
                   </p>
                   <div style={style.projectbuttons}>
                     <Button outline color="secondary" className="shadow p-2 rounded button">
@@ -110,8 +118,11 @@ class Porfolio extends Component {
                 <div className="project">
                   <p className="text-center">
                     Weather App is a web-app for viewing weather in real-time. Allow you to add a
-                    town and put a marker on the map. Stack Front and Back : HTML, CSS, BootStrap,
-                    Javascript, JQuery, MongoDB, Rest Api (Open Weather Map, LeafLet){' '}
+                    town and put a marker on the map.
+                  </p>
+                  <p className="text-center">
+                    HTML, CSS, BootStrap, Javascript, JQuery, MongoDB, Rest Api (Open Weather Map,
+                    LeafLet).{' '}
                   </p>
                   <div style={style.projectbuttons}>
                     <Button outline color="secondary" className="shadow p-2 rounded button">
