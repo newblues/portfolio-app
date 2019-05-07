@@ -22,7 +22,14 @@ const style = {
   subTitle: {
     fontSize: 17,
     fontWeight: 500,
-    letterSpacing: 7,
+    letterSpacing: 6,
+    textAlign: 'center',
+  },
+  subsubTitle: {
+    marginTop: 20,
+    fontSize: 15,
+    fontWeight: 600,
+    letterSpacing: 4,
     textAlign: 'center',
   },
   arrow: {
@@ -86,6 +93,10 @@ class Home extends Component {
             <h2 className="animated fadeInRight delay-0.8s" style={style.subTitle}>
               FULL-STACK DEVELOPPER
             </h2>
+            <h3 className="animated fadeInDown delay-0.9s" style={style.subsubTitle}>
+              {' '}
+              REACT JS - REACT NATIVE
+            </h3>
           </div>
         </div>
         <div style={style.buttonContainer}>

@@ -68,7 +68,10 @@ class AboutMe extends Component {
                   <p style={style.infoText}>Age : 35 ans</p>
                   <p style={style.infoText}>Tel : 06 88 84 71 10</p>
                   <p style={style.infoText}>
-                    Email : <a href={`mailto:${email}`}>anto.sauvage@gmail.com</a>
+                    Email :{' '}
+                    <a style={style.email} href={`mailto:${email}`}>
+                      anto.sauvage@gmail.com
+                    </a>
                   </p>
                 </div>
               ) : (
@@ -77,7 +80,7 @@ class AboutMe extends Component {
                   <p style={style.infoText}>Full name : Antoine Sauvage</p>
                   <p style={style.infoText}>Age : 35 years old</p>
                   <p style={style.infoText}>Phone : +33 6 88 84 71 10</p>
-                  <p style={style.infoText}>
+                  <p className="email">
                     Email : <a href={`mailto:${email}`}>anto.sauvage@gmail.com</a>
                   </p>
                 </div>
