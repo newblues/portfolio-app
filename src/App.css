@@ -38,6 +38,9 @@ a {
   color: var(--silver-color);
 }
 
+.aMail {
+  color: var(--blue-color) !important;
+}
 .home {
   position: relative;
   height: 95vh;

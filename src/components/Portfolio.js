@@ -19,10 +19,11 @@ class Porfolio extends Component {
             </Col>
           </Row>
 
+          {/* App your Barber */}
           <Row className="rowPorfolio">
             <Col xs="12" md="6" className="d-flex justify-content-center align-items-center">
               <ScrollAnimation className="md-mb" animateIn="fadeInLeft">
-                <div className="shadow rounded projectImg">
+                <div className="projectImg">
                   <img
                     className="projectImg"
                     style={style.img}
@@ -39,18 +40,19 @@ class Porfolio extends Component {
             >
               <div style={style.header}>
                 <ScrollAnimation animateIn="bounceIn">
-                  <img style={style.logo} src={require('../images/programming.svg')} alt="Logo" />
+                  <img style={style.logo} src={require('../images/smartphone.svg')} alt="Logo" />
                 </ScrollAnimation>
-                <h4 className="sectionSubtitle">My Movies</h4>
+                <h4 className="sectionSubtitle">App your Barber</h4>
               </div>
               {language === 'fr' ? (
                 <div className="project">
                   <p className="text-center">
-                    My movies est une application Web single page qui permet de voir les dernières
-                    sorties cinématographiques en temps réel et de gérer ses films favoris.
+                    App Your Barber est une application mobile qui met en relation les professionels
+                    du métiers de la coiffure, proposant la mise à disposition de sièges par les
+                    gérants de salon et la réservation par les coiffeurs freelances.
                   </p>
                   <p className="text-center">
-                    Javascript, ReactJS, JSX, Express, MongoDB, Rest API.{' '}
+                    Javascript, React-Native, JSX, Express, MongoDB, Rest API, Stripe, Cloudinary...{' '}
                   </p>
                   <div style={style.projectbuttons}>
                     <Button outline color="secondary" className="shadow p-2 rounded button">
@@ -83,6 +85,8 @@ class Porfolio extends Component {
               )}
             </Col>
           </Row>
+
+          {/* Weather App */}
           <Row>
             <Col
               xs="12"
@@ -143,7 +147,7 @@ class Porfolio extends Component {
             </Col>
             <Col xs="12" md="6" className="d-flex justify-content-center align-items-center">
               <ScrollAnimation className="md-mt" animateIn="fadeInRight">
-                <div className="shadow rounded projectImg">
+                <div className="projectImg">
                   <img
                     className="projectImg"
                     style={style.img}
@@ -152,6 +156,72 @@ class Porfolio extends Component {
                   />
                 </div>
               </ScrollAnimation>
+            </Col>
+          </Row>
+
+          {/* App your barber */}
+          <Row className="rowPorfolio">
+            <Col xs="12" md="6" className="d-flex justify-content-center align-items-center">
+              <ScrollAnimation className="md-mb" animateIn="fadeInLeft">
+                <div className="projectImg">
+                  <img
+                    className="projectImg"
+                    style={style.img}
+                    src={require('../images/mymoviesapp.png')}
+                    alt="Logo"
+                  />
+                </div>
+              </ScrollAnimation>
+            </Col>
+            <Col
+              xs="12"
+              md="6"
+              className="d-flex flex-column justify-content-center align-items-center"
+            >
+              <div style={style.header}>
+                <ScrollAnimation animateIn="bounceIn">
+                  <img style={style.logo} src={require('../images/programming.svg')} alt="Logo" />
+                </ScrollAnimation>
+                <h4 className="sectionSubtitle">My Movies</h4>
+              </div>
+              {language === 'fr' ? (
+                <div className="project">
+                  <p className="text-center">
+                    My movies est une application Web single page qui permet de voir les dernières
+                    sorties cinématographiques en temps réel et de gérer ses films favoris.
+                  </p>
+                  <p className="text-center">
+                    Javascript, ReactJS, JSX, Express, MongoDB, Rest API.{' '}
+                  </p>
+                  <div style={style.projectbuttons}>
+                    <Button outline color="secondary" className="shadow p-2 rounded button">
+                      Voir la démo
+                    </Button>{' '}
+                    <Button outline color="secondary" className="shadow p-2 rounded button">
+                      Voir sur Github
+                    </Button>{' '}
+                  </div>
+                </div>
+              ) : (
+                <div className="project">
+                  <p className="text-center">
+                    My movies is a single page web-app for viewing last movies release in real-time,
+                    and allow you to manage your favorites movies.
+                  </p>
+                  <p className="text-center">
+                    {' '}
+                    Javascript, ReactJS, JSX, Express, MongoDB, Rest API.{' '}
+                  </p>
+                  <div style={style.projectbuttons}>
+                    <Button outline color="secondary" className="shadow p-2 rounded button">
+                      View Live Demo
+                    </Button>{' '}
+                    <Button outline color="secondary" className="shadow p-2 rounded button">
+                      View on Github
+                    </Button>{' '}
+                  </div>
+                </div>
+              )}
             </Col>
           </Row>
         </Container>
