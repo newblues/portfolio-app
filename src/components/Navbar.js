@@ -57,7 +57,7 @@ class NavBar extends React.Component {
             </NavItem>
             <NavItem>
               <Link className="link" to="/#aboutme">
-                {language === 'fr' ? 'A propos' : 'About me'}
+                {language === 'fr' ? 'À propos' : 'About me'}
               </Link>
             </NavItem>
             <NavItem>

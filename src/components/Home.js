@@ -44,10 +44,6 @@ const style = {
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: 50,
-    paddingTop: '50px',
-    paddingBottom: '50px',
-    paddingRight: '50px',
-    paddingLeft: '50px',
   },
   vline: {
     position: 'absolute',

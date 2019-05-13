@@ -47,9 +47,9 @@ class Porfolio extends Component {
               {language === 'fr' ? (
                 <div className="project">
                   <p className="text-center">
-                    App Your Barber est une application mobile qui met en relation les professionels
-                    du métiers de la coiffure, proposant la mise à disposition de sièges par les
-                    gérants de salon et la réservation par les coiffeurs freelances.
+                    "App Your Barber" est une application mobile qui met en relation les
+                    professionels du métiers de la coiffure en proposant une mise à disposition de
+                    sièges par les gérants de salon et la réservation par les coiffeurs freelances.
                   </p>
                   <p className="text-center">
                     Javascript, React-Native, JSX, Express, MongoDB, Rest API, Stripe, Cloudinary...{' '}
@@ -66,8 +66,8 @@ class Porfolio extends Component {
               ) : (
                 <div className="project">
                   <p className="text-center">
-                    My movies is a single page web-app for viewing last movies release in real-time,
-                    and allow you to manage your favorites movies.
+                    "App Your Barber" is a mobile application which connects Barber Shop by
+                    freelance hairdressers.
                   </p>
                   <p className="text-center">
                     {' '}
@@ -102,8 +102,8 @@ class Porfolio extends Component {
               {language === 'fr' ? (
                 <div className="project">
                   <p className="text-center">
-                    Weather App est une application Web de météo en temps-réel. Permet d'ajouter une
-                    ville et de positioner un marker sur la carte.
+                    "Weather App" est une application Web de météo en temps-réel qui permet
+                    d'ajouter une ville et de positioner un marker sur la carte.
                   </p>
                   <p className="text-center">
                     HTML, CSS, BootStrap, Javascript, JQuery, MongoDB, Rest Api (Open Weather Map,
@@ -113,7 +113,13 @@ class Porfolio extends Component {
                     <Button outline color="secondary" className="shadow p-2 rounded button">
                       Voir la démo
                     </Button>{' '}
-                    <Button outline color="secondary" className="shadow p-2 rounded button">
+                    <Button
+                      href="https://github.com/newblues/weather-app"
+                      target="_blank"
+                      outline
+                      color="secondary"
+                      className="shadow p-2 rounded button"
+                    >
                       Voir sur Github
                     </Button>{' '}
                   </div>
@@ -159,7 +165,7 @@ class Porfolio extends Component {
             </Col>
           </Row>
 
-          {/* App your barber */}
+          {/* My Moviez App */}
           <Row className="rowPorfolio">
             <Col xs="12" md="6" className="d-flex justify-content-center align-items-center">
               <ScrollAnimation className="md-mb" animateIn="fadeInLeft">
@@ -187,17 +193,30 @@ class Porfolio extends Component {
               {language === 'fr' ? (
                 <div className="project">
                   <p className="text-center">
-                    My movies est une application Web single page qui permet de voir les dernières
-                    sorties cinématographiques en temps réel et de gérer ses films favoris.
+                    "My Movies" est une application Web single page qui permet de connaître les
+                    dernières sorties cinématographiques en temps réel et de gérer ses films
+                    favoris.
                   </p>
                   <p className="text-center">
                     Javascript, ReactJS, JSX, Express, MongoDB, Rest API.{' '}
                   </p>
                   <div style={style.projectbuttons}>
-                    <Button outline color="secondary" className="shadow p-2 rounded button">
+                    <Button
+                      href="https://infinite-tor-48908.herokuapp.com/"
+                      target="_blank"
+                      outline
+                      color="secondary"
+                      className="shadow p-2 rounded button"
+                    >
                       Voir la démo
                     </Button>{' '}
-                    <Button outline color="secondary" className="shadow p-2 rounded button">
+                    <Button
+                      href="https://github.com/newblues/mymoviz-app-frontend"
+                      target="_blank"
+                      outline
+                      color="secondary"
+                      className="shadow p-2 rounded button"
+                    >
                       Voir sur Github
                     </Button>{' '}
                   </div>
@@ -213,11 +232,23 @@ class Porfolio extends Component {
                     Javascript, ReactJS, JSX, Express, MongoDB, Rest API.{' '}
                   </p>
                   <div style={style.projectbuttons}>
-                    <Button outline color="secondary" className="shadow p-2 rounded button">
+                    <Button
+                      href="https://infinite-tor-48908.herokuapp.com/"
+                      target="_blank"
+                      outline
+                      color="secondary"
+                      className="shadow p-2 rounded button"
+                    >
                       View Live Demo
                     </Button>{' '}
-                    <Button outline color="secondary" className="shadow p-2 rounded button">
-                      View on Github
+                    <Button
+                      href="https://github.com/newblues/mymoviz-app-frontend"
+                      target="_blank"
+                      outline
+                      color="secondary"
+                      className="shadow p-2 rounded button"
+                    >
+                      > View on Github
                     </Button>{' '}
                   </div>
                 </div>
@@ -249,12 +280,12 @@ const style = {
     justifyContent: 'center',
   },
   logo: {
-    width: 50,
+    width: 60,
     margin: '0px 20px 20px 0px',
   },
   img: {
     height: 'auto',
-    width: 350,
+    width: 400,
   },
   projectbuttons: {
     display: 'flex',

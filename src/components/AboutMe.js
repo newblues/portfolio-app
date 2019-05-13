@@ -20,7 +20,7 @@ class AboutMe extends Component {
           <Row>
             <Col xs="12" className="text-center">
               {language === 'fr' ? (
-                <h3 className="sectionTitle">A propos</h3>
+                <h3 className="sectionTitle">À propos</h3>
               ) : (
                 <h3 className="sectionTitle">About me</h3>
               )}
@@ -34,18 +34,22 @@ class AboutMe extends Component {
               </ScrollAnimation>
               {language === 'fr' ? (
                 <div>
-                  <h4 className="sectionSubtitle">Mon histoire</h4>
+                  <h4 className="sectionSubtitle">En quelques mots</h4>
                   <p>
-                    Hello World ! Je m'appelle Antoine, passionné de code depuis plusieurs années
-                    j'intègre la Capsule un bootcamp. Apres 10 semaines intensive, 2 mois en tant
-                    que teacher assisant et de live Review, et le lancement d'une applicaiton mobile
-                    avec un associé here i am !
+                    "Bonjour à tous ! Passionné de code depuis toujours, j’intègre le Bootcamp de La
+                    Capsule à Paris début 2019. Après dix semaines de travail intensif, deux mois en
+                    tant que "Teacher assistant" et le lancement de ma première application mobile,
+                    je suis fin prêt pour de nouveaux projets !"
                   </p>
                 </div>
               ) : (
                 <div>
-                  <h4 className="sectionSubtitle">My story</h4>
-                  <p>Hello it's me!</p>
+                  <h4 className="sectionSubtitle">In a few words</h4>
+                  <p>
+                    "Hello World! Fan about code since always, I join La Capsule's Bootcamp in Paris
+                    early 2019. After ten weeks of intensive work, two months as "Teacher Assistant"
+                    and the launch of my first mobile app, I'm ready for new projects! "
+                  </p>
                 </div>
               )}
             </Col>
@@ -65,8 +69,7 @@ class AboutMe extends Component {
                 <div>
                   <h4 className="sectionSubtitle">Informations </h4>
                   <p style={style.infoText}>Nom : Antoine Sauvage</p>
-                  <p style={style.infoText}>Age : 35 ans</p>
-                  <p style={style.infoText}>Tel : 06 88 84 71 10</p>
+                  <p style={style.infoText}>Âge : 35 ans</p>
                   <p style={style.infoText}>
                     Email :{' '}
                     <a className="aMail" href={`mailto:${email}`}>
@@ -79,7 +82,6 @@ class AboutMe extends Component {
                   <h4 className="sectionSubtitle">Personal Details </h4>
                   <p style={style.infoText}>Full name : Antoine Sauvage</p>
                   <p style={style.infoText}>Age : 35 years old</p>
-                  <p style={style.infoText}>Phone : +33 6 88 84 71 10</p>
                   <p style={style.infoText}>
                     Email :{' '}
                     <a className="aMail" href={`mailto:${email}`}>
@@ -118,8 +120,7 @@ const style = {
     textAlign: 'left',
   },
   logo: {
-    color: 'red',
-    width: 50,
+    width: 60,
     margin: '0px 0px 20px 0px',
   },
 };

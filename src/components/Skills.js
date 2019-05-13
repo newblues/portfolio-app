@@ -27,7 +27,7 @@ class Skills extends Component {
               <h4 className="sectionSubtitle">Front-End</h4>
               <p style={style.p}>React JS, React Native, Expo</p>
               <p style={style.p}>Redux</p>
-              <p style={style.p}>JavaScript(es6), JQuery</p>
+              <p style={style.p}>JavaScript(Es6), JQuery</p>
               <p style={style.p}>HTML5</p>
               <p style={style.p}>CSS, Sass</p>
             </Col>
@@ -39,6 +39,7 @@ class Skills extends Component {
               <p style={style.p}>NodeJS, Express</p>
               <p style={style.p}>API Rest</p>
               <p style={style.p}>MongoDb</p>
+              <p style={style.p}>Stripe</p>
               <p style={style.p}>Cloudinary</p>
             </Col>
             <Col style={style.col} xs="12" sm="4">
@@ -73,7 +74,7 @@ const style = {
     alignItems: 'center',
   },
   logo: {
-    width: 50,
+    width: 60,
     margin: '0px 0px 20px 0px',
   },
   p: {
