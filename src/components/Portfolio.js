@@ -310,7 +310,7 @@ const style = {
   },
   img: {
     height: 'auto',
-    width: 400,
+    width: '75%',
   },
   projectbuttons: {
     display: 'flex',

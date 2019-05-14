@@ -1475,7 +1475,6 @@
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
-  
 }
 
 @-webkit-keyframes fadeInLeftBig {

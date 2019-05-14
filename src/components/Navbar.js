@@ -10,7 +10,7 @@ const style = {
     fontFamily: 'Montserrat',
     fontSize: '14px',
     fontWeight: 'bold',
-    width: '100%',
+    width: '100vw',
     zIndex: '1000',
   },
   logo: {
