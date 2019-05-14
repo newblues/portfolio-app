@@ -23,7 +23,7 @@ class Porfolio extends Component {
           <Row className="rowPorfolio">
             <Col xs="12" md="6" className="d-flex justify-content-center align-items-center">
               <ScrollAnimation className="md-mb" animateIn="fadeInLeft">
-                <div className="projectImg">
+                <div className="projectImg d-flex justify-content-center align-items-center">
                   <img
                     className="projectImg"
                     style={style.img}
@@ -105,7 +105,7 @@ class Porfolio extends Component {
           <Row className="rowPorfolio">
             <Col xs="12" md="6" className="d-flex justify-content-center align-items-center">
               <ScrollAnimation className="md-mb" animateIn="fadeInLeft">
-                <div className="projectImg">
+                <div className="projectImg d-flex justify-content-center align-items-center">
                   <img
                     className="projectImg"
                     style={style.img}
@@ -190,95 +190,95 @@ class Porfolio extends Component {
                 </div>
               )}
             </Col>
+          </Row>
 
-            {/* Weather App */}
-            <Row>
-              <Col xs="12" md="6" className="d-flex justify-content-center align-items-center">
-                <ScrollAnimation className="md-mt" animateIn="fadeInLeft">
-                  <div className="projectImg">
-                    <img
-                      className="projectImg"
-                      style={style.img}
-                      src={require('../images/weatherapp.png')}
-                      alt="Logo"
-                    />
-                  </div>
-                </ScrollAnimation>
-              </Col>
-              <Col
-                xs="12"
-                md="6"
-                className="d-flex flex-column justify-content-center align-items-center"
-              >
-                <div style={style.header}>
-                  <ScrollAnimation animateIn="bounceIn">
-                    <img style={style.logo} src={require('../images/programming.svg')} alt="Logo" />
-                  </ScrollAnimation>
-                  <h4 className="sectionSubtitle">Weather App</h4>
+          {/* Weather App */}
+          <Row className="rowPorfolio">
+            <Col xs="12" md="6" className="d-flex justify-content-center align-items-center">
+              <ScrollAnimation className="md-mt" animateIn="fadeInLeft">
+                <div className="projectImg d-flex justify-content-center align-items-center">
+                  <img
+                    className="projectImg"
+                    style={style.img}
+                    src={require('../images/weatherapp.png')}
+                    alt="Logo"
+                  />
                 </div>
-                {language === 'fr' ? (
-                  <div className="project">
-                    <p className="text-center">
-                      "Weather App" est une application Web de météo en temps-réel qui permet
-                      d'ajouter une ville et de positioner un marker sur la carte.
-                    </p>
-                    <p className="text-center">
-                      HTML, CSS, BootStrap, Javascript, JQuery, MongoDB, Rest Api (Open Weather Map,
-                      LeafLet).{' '}
-                    </p>
-                    <div style={style.projectbuttons}>
-                      <Button
-                        href="##"
-                        outline
-                        color="secondary"
-                        className="shadow p-2 rounded button"
-                      >
-                        Bientôt disponible
-                      </Button>{' '}
-                      <Button
-                        href="https://github.com/newblues/weather-app"
-                        target="_blank"
-                        outline
-                        color="secondary"
-                        className="shadow p-2 rounded button"
-                      >
-                        Voir sur Github
-                      </Button>{' '}
-                    </div>
+              </ScrollAnimation>
+            </Col>
+            <Col
+              xs="12"
+              md="6"
+              className="d-flex flex-column justify-content-center align-items-center"
+            >
+              <div style={style.header}>
+                <ScrollAnimation animateIn="bounceIn">
+                  <img style={style.logo} src={require('../images/programming.svg')} alt="Logo" />
+                </ScrollAnimation>
+                <h4 className="sectionSubtitle">Weather App</h4>
+              </div>
+              {language === 'fr' ? (
+                <div className="project">
+                  <p className="text-center">
+                    "Weather App" est une application Web de météo en temps-réel qui permet
+                    d'ajouter une ville et de positioner un marker sur la carte.
+                  </p>
+                  <p className="text-center">
+                    HTML, CSS, BootStrap, Javascript, JQuery, MongoDB, Rest Api (Open Weather Map,
+                    LeafLet).{' '}
+                  </p>
+                  <div style={style.projectbuttons}>
+                    <Button
+                      href="##"
+                      outline
+                      color="secondary"
+                      className="shadow p-2 rounded button"
+                    >
+                      Bientôt disponible
+                    </Button>{' '}
+                    <Button
+                      href="https://github.com/newblues/weather-app"
+                      target="_blank"
+                      outline
+                      color="secondary"
+                      className="shadow p-2 rounded button"
+                    >
+                      Voir sur Github
+                    </Button>{' '}
                   </div>
-                ) : (
-                  <div className="project">
-                    <p className="text-center">
-                      Weather App is a web-app for viewing weather in real-time. Allow you to add a
-                      town and put a marker on the map.
-                    </p>
-                    <p className="text-center">
-                      HTML, CSS, BootStrap, Javascript, JQuery, MongoDB, Rest Api (Open Weather Map,
-                      LeafLet).{' '}
-                    </p>
-                    <div style={style.projectbuttons}>
-                      <Button
-                        href="##"
-                        outline
-                        color="secondary"
-                        className="shadow p-2 rounded button"
-                      >
-                        Coming soon
-                      </Button>{' '}
-                      <Button
-                        href="https://github.com/newblues/weather-app"
-                        target="_blank"
-                        outline
-                        color="secondary"
-                        className="shadow p-2 rounded button"
-                      >
-                        View on Github
-                      </Button>{' '}
-                    </div>
+                </div>
+              ) : (
+                <div className="project">
+                  <p className="text-center">
+                    Weather App is a web-app for viewing weather in real-time. Allow you to add a
+                    town and put a marker on the map.
+                  </p>
+                  <p className="text-center">
+                    HTML, CSS, BootStrap, Javascript, JQuery, MongoDB, Rest Api (Open Weather Map,
+                    LeafLet).{' '}
+                  </p>
+                  <div style={style.projectbuttons}>
+                    <Button
+                      href="##"
+                      outline
+                      color="secondary"
+                      className="shadow p-2 rounded button"
+                    >
+                      Coming soon
+                    </Button>{' '}
+                    <Button
+                      href="https://github.com/newblues/weather-app"
+                      target="_blank"
+                      outline
+                      color="secondary"
+                      className="shadow p-2 rounded button"
+                    >
+                      View on Github
+                    </Button>{' '}
                   </div>
-                )}
-              </Col>
-            </Row>
+                </div>
+              )}
+            </Col>
           </Row>
         </Container>
       </div>
