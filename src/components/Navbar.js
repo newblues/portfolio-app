@@ -1,20 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {
-  Container,
-  Row,
-  Col,
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-} from 'reactstrap';
-
 import { connect } from 'react-redux';
 import { HashLink as Link } from 'react-router-hash-link';
-
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem } from 'reactstrap';
 import colors from '../config';
 
 const style = {
@@ -22,7 +10,7 @@ const style = {
     fontFamily: 'Montserrat',
     fontSize: '14px',
     fontWeight: 'bold',
-    width: '100%',
+    width: '100vw',
     zIndex: '1000',
   },
   logo: {
@@ -48,49 +36,43 @@ class NavBar extends React.Component {
     const { isOpen } = this.state;
 
     return (
-      <Container>
-        <Row>
-          <Col xs="12" className="text-center">
-            <Navbar
-              id="navbar"
-              style={style.container}
-              className="fixed-top animated fadeInDown delay-0.8s"
-              color="light"
-              light
-              expand="md"
-            >
-              <NavbarBrand className="link" href="/">
-                〈 A.S 〉
-              </NavbarBrand>
-              <NavbarToggler onClick={this.toggle} />
-              <Collapse isOpen={isOpen} navbar>
-                <Nav className="ml-auto" navbar>
-                  <NavItem>
-                    <Link className="link" to="/#home">
-                      {language === 'fr' ? 'Accueil' : 'Home'}
-                    </Link>
-                  </NavItem>
-                  <NavItem>
-                    <Link className="link" to="/#aboutme">
-                      {language === 'fr' ? 'Profil' : 'Profile'}
-                    </Link>
-                  </NavItem>
-                  <NavItem>
-                    <Link className="link" to="/#skills">
-                      {language === 'fr' ? 'Compétences' : 'Skills'}
-                    </Link>
-                  </NavItem>
-                  <NavItem>
-                    <Link className="link" to="/#portfolio">
-                      Portfolio
-                    </Link>
-                  </NavItem>
-                </Nav>
-              </Collapse>
-            </Navbar>
-          </Col>
-        </Row>
-      </Container>
+      <Navbar
+        id="navbar"
+        style={style.container}
+        className="fixed-top animated fadeInDown delay-0.8s"
+        color="light"
+        light
+        expand="md"
+      >
+        <NavbarBrand className="link" href="/">
+          〈 A.S 〉
+        </NavbarBrand>
+        <NavbarToggler onClick={this.toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="ml-auto" navbar>
+            <NavItem>
+              <Link className="link" to="/#home">
+                {language === 'fr' ? 'Accueil' : 'Home'}
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link className="link" to="/#aboutme">
+                {language === 'fr' ? 'Profil' : 'Profile'}
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link className="link" to="/#skills">
+                {language === 'fr' ? 'Compétences' : 'Skills'}
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link className="link" to="/#portfolio">
+                Portfolio
+              </Link>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Navbar>
     );
   }
 }
