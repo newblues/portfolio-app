@@ -55,10 +55,20 @@ class Porfolio extends Component {
                     Javascript, React-Native, JSX, Express, MongoDB, Rest API, Stripe, Cloudinary...{' '}
                   </p>
                   <div style={style.projectbuttons}>
-                    <Button outline color="secondary" className="shadow p-2 rounded button">
+                    <Button
+                      href="##"
+                      outline
+                      color="secondary"
+                      className="shadow p-2 rounded button"
+                    >
                       Bientôt sur le Store
                     </Button>{' '}
-                    <Button outline color="secondary" className="shadow p-2 rounded button">
+                    <Button
+                      href="##"
+                      outline
+                      color="secondary"
+                      className="shadow p-2 rounded button"
+                    >
                       Voir sur Github (Privé)
                     </Button>{' '}
                   </div>
@@ -77,7 +87,12 @@ class Porfolio extends Component {
                     <Button outline color="secondary" className="shadow p-2 rounded button">
                       Soon available on Store
                     </Button>{' '}
-                    <Button outline color="secondary" className="shadow p-2 rounded button">
+                    <Button
+                      href="##"
+                      outline
+                      color="secondary"
+                      className="shadow p-2 rounded button"
+                    >
                       View on Github (Private)
                     </Button>{' '}
                   </div>
@@ -179,7 +194,7 @@ class Porfolio extends Component {
             {/* Weather App */}
             <Row>
               <Col xs="12" md="6" className="d-flex justify-content-center align-items-center">
-                <ScrollAnimation className="md-mt" animateIn="fadeInRight">
+                <ScrollAnimation className="md-mt" animateIn="fadeInLeft">
                   <div className="projectImg">
                     <img
                       className="projectImg"
@@ -212,7 +227,12 @@ class Porfolio extends Component {
                       LeafLet).{' '}
                     </p>
                     <div style={style.projectbuttons}>
-                      <Button outline color="secondary" className="shadow p-2 rounded button">
+                      <Button
+                        href="##"
+                        outline
+                        color="secondary"
+                        className="shadow p-2 rounded button"
+                      >
                         Bientôt disponible
                       </Button>{' '}
                       <Button
@@ -237,7 +257,12 @@ class Porfolio extends Component {
                       LeafLet).{' '}
                     </p>
                     <div style={style.projectbuttons}>
-                      <Button outline color="secondary" className="shadow p-2 rounded button">
+                      <Button
+                        href="##"
+                        outline
+                        color="secondary"
+                        className="shadow p-2 rounded button"
+                      >
                         Coming soon
                       </Button>{' '}
                       <Button
