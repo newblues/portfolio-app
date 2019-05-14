@@ -27,7 +27,7 @@ class Porfolio extends Component {
                   <img
                     className="projectImg"
                     style={style.img}
-                    src={require('../images/mymoviesapp.png')}
+                    src={require('../images/appurbarberapp.png')}
                     alt="Logo"
                   />
                 </div>
@@ -56,10 +56,10 @@ class Porfolio extends Component {
                   </p>
                   <div style={style.projectbuttons}>
                     <Button outline color="secondary" className="shadow p-2 rounded button">
-                      Voir la démo
+                      Bientôt sur le Store
                     </Button>{' '}
                     <Button outline color="secondary" className="shadow p-2 rounded button">
-                      Voir sur Github
+                      Voir sur Github (Privé)
                     </Button>{' '}
                   </div>
                 </div>
@@ -75,93 +75,14 @@ class Porfolio extends Component {
                   </p>
                   <div style={style.projectbuttons}>
                     <Button outline color="secondary" className="shadow p-2 rounded button">
-                      View Live Demo
+                      Soon available on Store
                     </Button>{' '}
                     <Button outline color="secondary" className="shadow p-2 rounded button">
-                      View on Github
+                      View on Github (Private)
                     </Button>{' '}
                   </div>
                 </div>
               )}
-            </Col>
-          </Row>
-
-          {/* Weather App */}
-          <Row>
-            <Col
-              xs="12"
-              md="6"
-              className="d-flex flex-column justify-content-center align-items-center"
-            >
-              <div style={style.header}>
-                <ScrollAnimation animateIn="bounceIn">
-                  <img style={style.logo} src={require('../images/programming.svg')} alt="Logo" />
-                </ScrollAnimation>
-                <h4 className="sectionSubtitle">Weather App</h4>
-              </div>
-              {language === 'fr' ? (
-                <div className="project">
-                  <p className="text-center">
-                    "Weather App" est une application Web de météo en temps-réel qui permet
-                    d'ajouter une ville et de positioner un marker sur la carte.
-                  </p>
-                  <p className="text-center">
-                    HTML, CSS, BootStrap, Javascript, JQuery, MongoDB, Rest Api (Open Weather Map,
-                    LeafLet).{' '}
-                  </p>
-                  <div style={style.projectbuttons}>
-                    <Button outline color="secondary" className="shadow p-2 rounded button">
-                      Voir la démo
-                    </Button>{' '}
-                    <Button
-                      href="https://github.com/newblues/weather-app"
-                      target="_blank"
-                      outline
-                      color="secondary"
-                      className="shadow p-2 rounded button"
-                    >
-                      Voir sur Github
-                    </Button>{' '}
-                  </div>
-                </div>
-              ) : (
-                <div className="project">
-                  <p className="text-center">
-                    Weather App is a web-app for viewing weather in real-time. Allow you to add a
-                    town and put a marker on the map.
-                  </p>
-                  <p className="text-center">
-                    HTML, CSS, BootStrap, Javascript, JQuery, MongoDB, Rest Api (Open Weather Map,
-                    LeafLet).{' '}
-                  </p>
-                  <div style={style.projectbuttons}>
-                    <Button outline color="secondary" className="shadow p-2 rounded button">
-                      View Live Demo
-                    </Button>{' '}
-                    <Button
-                      href="https://github.com/newblues/weather-app"
-                      target="_blank"
-                      outline
-                      color="secondary"
-                      className="shadow p-2 rounded button"
-                    >
-                      View on Github
-                    </Button>{' '}
-                  </div>
-                </div>
-              )}
-            </Col>
-            <Col xs="12" md="6" className="d-flex justify-content-center align-items-center">
-              <ScrollAnimation className="md-mt" animateIn="fadeInRight">
-                <div className="projectImg">
-                  <img
-                    className="projectImg"
-                    style={style.img}
-                    src={require('../images/weatherapp.png')}
-                    alt="Logo"
-                  />
-                </div>
-              </ScrollAnimation>
             </Col>
           </Row>
 
@@ -188,12 +109,12 @@ class Porfolio extends Component {
                 <ScrollAnimation animateIn="bounceIn">
                   <img style={style.logo} src={require('../images/programming.svg')} alt="Logo" />
                 </ScrollAnimation>
-                <h4 className="sectionSubtitle">My Movies</h4>
+                <h4 className="sectionSubtitle">My Moviz</h4>
               </div>
               {language === 'fr' ? (
                 <div className="project">
                   <p className="text-center">
-                    "My Movies" est une application Web single page qui permet de connaître les
+                    "My Moviz" est une application Web single page qui permet de connaître les
                     dernières sorties cinématographiques en temps réel et de gérer ses films
                     favoris.
                   </p>
@@ -224,8 +145,8 @@ class Porfolio extends Component {
               ) : (
                 <div className="project">
                   <p className="text-center">
-                    My movies is a single page web-app for viewing last movies release in real-time,
-                    and allow you to manage your favorites movies.
+                    "My Moviz" is a single page web-app for viewing last movies release in
+                    real-time, and allow you to manage your favorites movies.
                   </p>
                   <p className="text-center">
                     {' '}
@@ -248,12 +169,91 @@ class Porfolio extends Component {
                       color="secondary"
                       className="shadow p-2 rounded button"
                     >
-                      > View on Github
+                      View on Github
                     </Button>{' '}
                   </div>
                 </div>
               )}
             </Col>
+
+            {/* Weather App */}
+            <Row>
+              <Col xs="12" md="6" className="d-flex justify-content-center align-items-center">
+                <ScrollAnimation className="md-mt" animateIn="fadeInRight">
+                  <div className="projectImg">
+                    <img
+                      className="projectImg"
+                      style={style.img}
+                      src={require('../images/weatherapp.png')}
+                      alt="Logo"
+                    />
+                  </div>
+                </ScrollAnimation>
+              </Col>
+              <Col
+                xs="12"
+                md="6"
+                className="d-flex flex-column justify-content-center align-items-center"
+              >
+                <div style={style.header}>
+                  <ScrollAnimation animateIn="bounceIn">
+                    <img style={style.logo} src={require('../images/programming.svg')} alt="Logo" />
+                  </ScrollAnimation>
+                  <h4 className="sectionSubtitle">Weather App</h4>
+                </div>
+                {language === 'fr' ? (
+                  <div className="project">
+                    <p className="text-center">
+                      "Weather App" est une application Web de météo en temps-réel qui permet
+                      d'ajouter une ville et de positioner un marker sur la carte.
+                    </p>
+                    <p className="text-center">
+                      HTML, CSS, BootStrap, Javascript, JQuery, MongoDB, Rest Api (Open Weather Map,
+                      LeafLet).{' '}
+                    </p>
+                    <div style={style.projectbuttons}>
+                      <Button outline color="secondary" className="shadow p-2 rounded button">
+                        Bientôt disponible
+                      </Button>{' '}
+                      <Button
+                        href="https://github.com/newblues/weather-app"
+                        target="_blank"
+                        outline
+                        color="secondary"
+                        className="shadow p-2 rounded button"
+                      >
+                        Voir sur Github
+                      </Button>{' '}
+                    </div>
+                  </div>
+                ) : (
+                  <div className="project">
+                    <p className="text-center">
+                      Weather App is a web-app for viewing weather in real-time. Allow you to add a
+                      town and put a marker on the map.
+                    </p>
+                    <p className="text-center">
+                      HTML, CSS, BootStrap, Javascript, JQuery, MongoDB, Rest Api (Open Weather Map,
+                      LeafLet).{' '}
+                    </p>
+                    <div style={style.projectbuttons}>
+                      <Button outline color="secondary" className="shadow p-2 rounded button">
+                        Coming soon
+                      </Button>{' '}
+                      <Button
+                        href="https://github.com/newblues/weather-app"
+                        target="_blank"
+                        outline
+                        color="secondary"
+                        className="shadow p-2 rounded button"
+                      >
+                        View on Github
+                      </Button>{' '}
+                    </div>
+                  </div>
+                )}
+              </Col>
+            </Row>
           </Row>
         </Container>
       </div>

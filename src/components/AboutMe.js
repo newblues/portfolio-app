@@ -20,9 +20,9 @@ class AboutMe extends Component {
           <Row>
             <Col xs="12" className="text-center">
               {language === 'fr' ? (
-                <h3 className="sectionTitle">À propos</h3>
+                <h3 className="sectionTitle">Profil</h3>
               ) : (
-                <h3 className="sectionTitle">About me</h3>
+                <h3 className="sectionTitle">Profile</h3>
               )}
             </Col>
           </Row>
@@ -34,7 +34,7 @@ class AboutMe extends Component {
               </ScrollAnimation>
               {language === 'fr' ? (
                 <div>
-                  <h4 className="sectionSubtitle">En quelques mots</h4>
+                  <h4 className="sectionSubtitle">À propos</h4>
                   <p>
                     "Bonjour à tous ! Passionné de code depuis toujours, j’intègre le Bootcamp de La
                     Capsule à Paris début 2019. Après dix semaines de travail intensif, deux mois en
@@ -44,7 +44,7 @@ class AboutMe extends Component {
                 </div>
               ) : (
                 <div>
-                  <h4 className="sectionSubtitle">In a few words</h4>
+                  <h4 className="sectionSubtitle">About me</h4>
                   <p>
                     "Hello World! Fan about code since always, I join La Capsule's Bootcamp in Paris
                     early 2019. After ten weeks of intensive work, two months as "Teacher Assistant"
