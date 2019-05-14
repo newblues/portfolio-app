@@ -67,7 +67,7 @@ p {
   font-size: 14;
 }
 
-.projectImg {
+/* .projectImg {
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: 0.3s ease-in-out;
@@ -77,7 +77,7 @@ p {
 .projectImg:hover {
   -webkit-transform: scale(1.03);
   transform: scale(1.03);
-}
+} */
 
 .button {
   background: white !important;
