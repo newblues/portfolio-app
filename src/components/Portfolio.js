@@ -229,12 +229,13 @@ class Porfolio extends Component {
                   </p>
                   <div style={style.projectbuttons}>
                     <Button
-                      href="##"
+                      href="https://salty-savannah-56707.herokuapp.com/"
+                      target="_blank"
                       outline
                       color="secondary"
                       className="shadow p-2 rounded button"
                     >
-                      Bientôt disponible
+                      Voir la démo
                     </Button>{' '}
                     <Button
                       href="https://github.com/newblues/weather-app"
@@ -259,12 +260,13 @@ class Porfolio extends Component {
                   </p>
                   <div style={style.projectbuttons}>
                     <Button
-                      href="##"
+                      href="https://salty-savannah-56707.herokuapp.com/"
+                      target="_blank"
                       outline
                       color="secondary"
                       className="shadow p-2 rounded button"
                     >
-                      Coming soon
+                      View Live Demo
                     </Button>{' '}
                     <Button
                       href="https://github.com/newblues/weather-app"
