@@ -39,7 +39,7 @@ class AboutMe extends Component {
                     "Bonjour à tous ! Passionné de code depuis toujours, j’intègre le Bootcamp de La
                     Capsule à Paris début 2019. Après dix semaines de travail intensif, deux mois en
                     tant que "Teacher assistant" et le lancement de ma première application mobile,
-                    je suis fin prêt pour de nouveaux projets !"
+                    je suis prêt pour de nouveaux projets !"
                   </p>
                 </div>
               ) : (

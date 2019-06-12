@@ -4,7 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createStore, combineReducers } from 'redux';
 
-import './App.css';
+import './App.css'; 
 import './animate.css';
 
 import NavBar from './components/Navbar';

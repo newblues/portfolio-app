@@ -48,7 +48,7 @@ class Porfolio extends Component {
                 <div className="project">
                   <p className="text-center">
                     "App Your Barber" est une application mobile qui met en relation les
-                    professionels du métiers de la coiffure en proposant une mise à disposition de
+                    professionnels du métiers de la coiffure en proposant une mise à disposition de
                     sièges par les gérants de salon et la réservation par les coiffeurs freelances.
                   </p>
                   <p className="text-center">
