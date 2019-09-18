@@ -19,6 +19,96 @@ class Porfolio extends Component {
             </Col>
           </Row>
 
+          {/* Contact App */}
+          <Row className="rowPorfolio">
+            <Col xs="12" md="6" className="d-flex justify-content-center align-items-center">
+              <ScrollAnimation className="md-mb" animateIn="fadeInLeft">
+                <div className="projectImg d-flex justify-content-center align-items-center">
+                  <img
+                    className="projectImg"
+                    style={style.img}
+                    src={require('../images/contact.png')}
+                    alt="Logo"
+                  />
+                </div>
+              </ScrollAnimation>
+            </Col>
+            <Col
+              xs="12"
+              md="6"
+              className="d-flex flex-column justify-content-center align-items-center"
+            >
+              <div style={style.header}>
+                <ScrollAnimation animateIn="bounceIn">
+                  <img style={style.logo} src={require('../images/programming.svg')} alt="Logo" />
+                </ScrollAnimation>
+                <h4 className="sectionSubtitle">Contact</h4>
+              </div>
+              {language === 'fr' ? (
+                <div className="project">
+                  <p className="text-center">
+                    "Contact" est une application Web minimaliste qui permet de gérer en ligne son
+                    carnet d'adresse.
+                  </p>
+                  <p className="text-center">
+                    Javascript, ReactJS, Redux, Redux-thunk, React-Router, Rest API, BootStrap...
+                  </p>
+                  <div style={style.projectbuttons}>
+                    <Button
+                      href="https://quiet-thicket-98139.herokuapp.com"
+                      target="_blank"
+                      outline
+                      color="secondary"
+                      className="shadow p-2 rounded button"
+                    >
+                      Voir la démo
+                    </Button>{' '}
+                    <Button
+                      href="https://github.com/newblues/contact-app"
+                      target="_blank"
+                      outline
+                      color="secondary"
+                      className="shadow p-2 rounded button"
+                    >
+                      Voir sur Github
+                    </Button>{' '}
+                  </div>
+                </div>
+              ) : (
+                <div className="project">
+                  <p className="text-center">
+                    "Contact" is a minimalist web application that allows you to manage online your
+                    address book.
+                  </p>
+                  <p className="text-center">
+                    {' '}
+                    Javascript, ReactJS, Redux, Redux-thunk, React-Router, Rest API, BootStrap...
+                  </p>
+                  <div style={style.projectbuttons}>
+                    <Button
+                      href="https://quiet-thicket-98139.herokuapp.com"
+                      target="_blank"
+                      outline
+                      color="secondary"
+                      className="shadow p-2 rounded button"
+                    >
+                      View Live Demo
+                    </Button>{' '}
+                    <Button
+                      href="https://github.com/newblues/contact-app"
+                      target="_blank"
+                      outline
+                      color="secondary"
+                      className="shadow p-2 rounded button"
+                    >
+                      View on Github
+                    </Button>{' '}
+                  </div>
+                </div>
+              )}
+            </Col>
+          </Row>
+
           {/* App your Barber */}
           <Row className="rowPorfolio">
             <Col xs="12" md="6" className="d-flex justify-content-center align-items-center">
