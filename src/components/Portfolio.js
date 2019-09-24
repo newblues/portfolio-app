@@ -19,6 +19,99 @@ class Porfolio extends Component {
             </Col>
           </Row>
 
+          {/* HAIRbnBARB App */}
+          <Row className="rowPorfolio">
+            <Col xs="12" md="6" className="d-flex justify-content-center align-items-center">
+              <ScrollAnimation className="md-mb" animateIn="fadeInLeft">
+                <div className="projectImg d-flex justify-content-center align-items-center">
+                  <img
+                    className="projectImg"
+                    style={style.img}
+                    src={require('../images/hairbnbarb.png')}
+                    alt="Logo"
+                  />
+                </div>
+              </ScrollAnimation>
+            </Col>
+            <Col
+              xs="12"
+              md="6"
+              className="d-flex flex-column justify-content-center align-items-center"
+            >
+              <div style={style.header}>
+                <ScrollAnimation animateIn="bounceIn">
+                  <img style={style.logo} src={require('../images/programming.svg')} alt="Logo" />
+                </ScrollAnimation>
+                <h4 className="sectionSubtitle">HairbnBarb</h4>
+              </div>
+              {language === 'fr' ? (
+                <div className="project">
+                  <p className="text-center">
+                    "HairbnBarb" est un prototype de eShop pour montrer comment les composants React
+                    et Redux peuvent être utilisés pour créer une expérience utilisateur conviviale
+                    avec une visualisation instantanée des mises à jour et un code évolutif, dans
+                    les applications Ecommerce.
+                  </p>
+                  <p className="text-center">
+                    Javascript, ReactJS, Redux, Redux-thunk, React-Router, Rest API, BootStrap...
+                  </p>
+                  <div style={style.projectbuttons}>
+                    <Button
+                      href="https://dry-island-10037.herokuapp.com/"
+                      target="_blank"
+                      outline
+                      color="secondary"
+                      className="shadow p-2 rounded button"
+                    >
+                      Voir la démo
+                    </Button>{' '}
+                    <Button
+                      href="https://github.com/newblues/wecasa-app"
+                      target="_blank"
+                      outline
+                      color="secondary"
+                      className="shadow p-2 rounded button"
+                    >
+                      Voir sur Github
+                    </Button>{' '}
+                  </div>
+                </div>
+              ) : (
+                <div className="project">
+                  <p className="text-center">
+                    "HairbnBarb" is a simple shopping cart prototype to shows how React components
+                    and Redux can be used to build a friendly user experience with instant visual
+                    updates and scaleable code in ecommerce applications.
+                  </p>
+                  <p className="text-center">
+                    {' '}
+                    Javascript, ReactJS, Redux, Redux-thunk, React-Router, Rest API, BootStrap...
+                  </p>
+                  <div style={style.projectbuttons}>
+                    <Button
+                      href="https://dry-island-10037.herokuapp.com/"
+                      target="_blank"
+                      outline
+                      color="secondary"
+                      className="shadow p-2 rounded button"
+                    >
+                      View Live Demo
+                    </Button>{' '}
+                    <Button
+                      href="https://github.com/newblues/wecasa-app"
+                      target="_blank"
+                      outline
+                      color="secondary"
+                      className="shadow p-2 rounded button"
+                    >
+                      View on Github
+                    </Button>{' '}
+                  </div>
+                </div>
+              )}
+            </Col>
+          </Row>
+
           {/* Contact App */}
           <Row className="rowPorfolio">
             <Col xs="12" md="6" className="d-flex justify-content-center align-items-center">
