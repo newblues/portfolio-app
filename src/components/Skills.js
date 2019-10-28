@@ -26,19 +26,23 @@ class Skills extends Component {
               </ScrollAnimation>
               <h4 className="sectionSubtitle">Front-End</h4>
               <p style={style.p}>React JS, React Native, Expo</p>
-              <p style={style.p}>Redux</p>
-              <p style={style.p}>JavaScript(Es6), JQuery</p>
-              <p style={style.p}>HTML5</p>
-              <p style={style.p}>CSS, Sass</p>
+              <p style={style.p}>JavaScript ES6/ES7/ES8/ES9, JQuery</p>
+              <p style={style.p}>HTML5, CSS, Sass, Less</p>
+              <p style={style.p}>Styled components</p>
+              <p style={style.p}>Redux, Redux-Thunk, Redux-Saga</p>
+              <p style={style.p}>React Router, Hooks, Context Api</p>
+              <p style={style.p}>Jest, Ensyme, ESLint</p>
             </Col>
             <Col style={style.col} xs="12" sm="4">
               <ScrollAnimation className="sm-mt" animateIn="bounceIn">
                 <img style={style.logo} src={require('../images/cloud.svg')} alt="Logo" />
               </ScrollAnimation>
               <h4 className="sectionSubtitle">Back-End</h4>
-              <p style={style.p}>NodeJS, Express</p>
-              <p style={style.p}>API Rest</p>
-              <p style={style.p}>MongoDb</p>
+              <p style={style.p}>NodeJS</p>
+              <p style={style.p}>Express</p>
+              <p style={style.p}>Rest API, GraphQL</p>
+              <p style={style.p}>Firebase</p>
+              <p style={style.p}>MongoDB</p>
               <p style={style.p}>Stripe</p>
               <p style={style.p}>Cloudinary</p>
             </Col>
@@ -46,7 +50,7 @@ class Skills extends Component {
               <ScrollAnimation className="sm-mt" animateIn="bounceIn">
                 <img style={style.logo} src={require('../images/settings.svg')} alt="Logo" />
               </ScrollAnimation>
-              <h4 className="sectionSubtitle">Build Tools</h4>
+              <h4 className="sectionSubtitle">DevOps</h4>
               <p style={style.p}>Npm, Yarn</p>
               <p style={style.p}>Webpack, Babel</p>
               <p style={style.p}>Git, GitHub</p>

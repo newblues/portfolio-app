@@ -122,23 +122,22 @@ class Home extends Component {
   }
 }
 
-function mapStateToProps(state) {
+const mapStateToProps = state => {
   return {
     language: state.language,
   };
-}
+};
 
-function mapDispatchToProps(dispatch) {
+const mapDispatchToProps = dispatch => {
   return {
     setLanguage(language) {
-      // console.log('dispatch ------------->', language.target.value)
       dispatch({
         type: 'switchLanguage',
         language: language.target.value,
       });
     },
   };
-}
+};
 
 export default connect(
   mapStateToProps,
