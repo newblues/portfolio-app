@@ -19,7 +19,7 @@ class Porfolio extends Component {
             </Col>
           </Row>
 
-          {/* HAIRbnBARB App */}
+          {/* EShop App */}
           <Row className="rowPorfolio">
             <Col xs="12" md="6" className="d-flex justify-content-center align-items-center">
               <ScrollAnimation className="md-mb" animateIn="fadeInLeft">
@@ -27,7 +27,7 @@ class Porfolio extends Component {
                   <img
                     className="projectImg"
                     style={style.img}
-                    src={require('../images/hairbnbarb.png')}
+                    src={require('../images/e-shop.png')}
                     alt="Logo"
                   />
                 </div>
@@ -42,22 +42,23 @@ class Porfolio extends Component {
                 <ScrollAnimation animateIn="bounceIn">
                   <img style={style.logo} src={require('../images/programming.svg')} alt="Logo" />
                 </ScrollAnimation>
-                <h4 className="sectionSubtitle">HairbnBarb</h4>
+                <h4 className="sectionSubtitle">E-Shop</h4>
               </div>
               {language === 'fr' ? (
                 <div className="project">
                   <p className="text-center">
-                    "HairbnBarb" est un prototype de eShop pour montrer comment les composants React
-                    et Redux peuvent être utilisés pour créer une expérience utilisateur conviviale
+                    "E-Shop" est un prototype de eShop pour montrer comment les composants React et
+                    Redux peuvent être utilisés pour créer une expérience utilisateur conviviale
                     avec une visualisation instantanée des mises à jour et un code évolutif, dans
                     les applications Ecommerce.
                   </p>
                   <p className="text-center">
-                    Javascript, ReactJS, Redux, Redux-thunk, React-Router, Rest API, BootStrap...
+                    Javascript, ReactJS, Redux, Redux-thunk, Firebase, Google SignIn, React-Router,
+                    Styled Components, Rest API...
                   </p>
                   <div style={style.projectbuttons}>
                     <Button
-                      href="https://dry-island-10037.herokuapp.com/"
+                      href="https://pure-lowlands-96803.herokuapp.com"
                       target="_blank"
                       outline
                       color="secondary"
@@ -66,7 +67,7 @@ class Porfolio extends Component {
                       Voir la démo
                     </Button>{' '}
                     <Button
-                      href="https://github.com/newblues/wecasa-app"
+                      href="https://github.com/newblues/e-shop"
                       target="_blank"
                       outline
                       color="secondary"
@@ -85,11 +86,12 @@ class Porfolio extends Component {
                   </p>
                   <p className="text-center">
                     {' '}
-                    Javascript, ReactJS, Redux, Redux-thunk, React-Router, Rest API, BootStrap...
+                    Javascript, ReactJS, Redux, Redux-thunk, Firebase, Google SignIn, React-Router,
+                    Styled Components, Rest API...{' '}
                   </p>
                   <div style={style.projectbuttons}>
                     <Button
-                      href="https://dry-island-10037.herokuapp.com/"
+                      href="https://pure-lowlands-96803.herokuapp.com"
                       target="_blank"
                       outline
                       color="secondary"
@@ -98,7 +100,7 @@ class Porfolio extends Component {
                       View Live Demo
                     </Button>{' '}
                     <Button
-                      href="https://github.com/newblues/wecasa-app"
+                      href="https://github.com/newblues/e-shop"
                       target="_blank"
                       outline
                       color="secondary"
