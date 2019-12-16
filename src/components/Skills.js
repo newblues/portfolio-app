@@ -50,7 +50,7 @@ class Skills extends Component {
               <ScrollAnimation className="sm-mt" animateIn="bounceIn">
                 <img style={style.logo} src={require('../images/settings.svg')} alt="Logo" />
               </ScrollAnimation>
-              <h4 className="sectionSubtitle">DevOps</h4>
+              <h4 className="sectionSubtitle">Build-Tools</h4>
               <p style={style.p}>Npm, Yarn</p>
               <p style={style.p}>Webpack, Babel</p>
               <p style={style.p}>Git, GitHub</p>

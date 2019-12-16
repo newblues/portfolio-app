@@ -36,19 +36,29 @@ class AboutMe extends Component {
                 <div>
                   <h4 className="sectionSubtitle">À propos</h4>
                   <p>
-                    "Bonjour à tous ! Passionné de code depuis toujours, j’intègre le Bootcamp de La
-                    Capsule à Paris début 2019. Après dix semaines de travail intensif, deux mois en
-                    tant que "Teacher assistant" et le lancement de ma première application mobile,
-                    je suis prêt pour de nouveaux projets !"
+                    "Après 7 années comme ingénieur du son et 3 comme artisan menuisier, j'ai décidé
+                    de me reconvertir.
+                  </p>
+                  <p>
+                    {' '}
+                    À travers ces métiers à première vue très différents, j’ai acquis les mêmes
+                    compétences et qualités qui me permettent aujourd’hui d’être à l’aise dans ce
+                    nouveau métier : rigoureux, curieux, organisé, logique, positif, responsable et
+                    consciencieux."
                   </p>
                 </div>
               ) : (
                 <div>
                   <h4 className="sectionSubtitle">About me</h4>
                   <p>
-                    "Hello World! Fan about code since always, I join La Capsule's Bootcamp in Paris
-                    early 2019. After ten weeks of intensive work, two months as "Teacher Assistant"
-                    and the launch of my first mobile app, I'm ready for new projects! "
+                    "After 7 years as a sound engineer and 3 as a carpenter, I decided to retrain.
+                  </p>
+                  <p>
+                    {' '}
+                    Through these very different professions at first glance, I acquired the same
+                    skills and qualities that allow me today to be comfortable in this new
+                    profession: rigorous, curious, organized, logical, positive, responsible and
+                    conscientious."
                   </p>
                 </div>
               )}
