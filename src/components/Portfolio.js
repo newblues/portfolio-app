@@ -19,6 +19,99 @@ class Porfolio extends Component {
             </Col>
           </Row>
 
+          {/* Finding Falcone App */}
+          <Row className="rowPorfolio">
+            <Col xs="12" md="6" className="d-flex justify-content-center align-items-center">
+              <ScrollAnimation className="md-mb" animateIn="fadeInLeft">
+                <div className="projectImg d-flex justify-content-center align-items-center">
+                  <img
+                    className="projectImg"
+                    style={style.img}
+                    src={require('../images/finding-falcone.png')}
+                    alt="Logo"
+                  />
+                </div>
+              </ScrollAnimation>
+            </Col>
+            <Col
+              xs="12"
+              md="6"
+              className="d-flex flex-column justify-content-center align-items-center"
+            >
+              <div style={style.header}>
+                <ScrollAnimation animateIn="bounceIn">
+                  <img style={style.logo} src={require('../images/programming.svg')} alt="Logo" />
+                </ScrollAnimation>
+                <h4 className="sectionSubtitle">Findding-Falcone</h4>
+              </div>
+              {language === 'fr' ? (
+                <div className="project">
+                  <p className="text-center">
+                    "Notre coding challenge se situent sur la planète Lengaburu. Après la récente
+                    Guerre des Falicones, le roi Shan a exilé la reine Al Falcone pendant 15 ans.
+                    Toutefois, si il la trouve avant la fin des 15 ans, elle doit s'exiler pour 15
+                    autres années!"
+                  </p>
+                  <p className="text-center">
+                    Javascript, ReactJS, Redux, Redux-thunk, React-router, Hooks, Rest API...
+                  </p>
+                  <div style={style.projectbuttons}>
+                    <Button
+                      href="https://finding-falcone-app.herokuapp.com/"
+                      target="_blank"
+                      outline
+                      color="secondary"
+                      className="shadow p-2 rounded button"
+                    >
+                      Voir la démo
+                    </Button>{' '}
+                    <Button
+                      href="https://github.com/newblues/finding-falcone-app"
+                      target="_blank"
+                      outline
+                      color="secondary"
+                      className="shadow p-2 rounded button"
+                    >
+                      Voir sur Github
+                    </Button>{' '}
+                  </div>
+                </div>
+              ) : (
+                <div className="project">
+                  <p className="text-center">
+                    "Our coding challenges are set in the planet of Lengaburu. After the recent
+                    Falicornian war, King Shan has exiled Queen Al Falcone for 15 years. However, if
+                    he finds her before the 15 years are up, she has to go into exile for another 15
+                    years!"
+                  </p>
+                  <p className="text-center">
+                    Javascript, ReactJS, Redux, Redux-thunk, React-router, Hooks, Rest API...
+                  </p>
+                  <div style={style.projectbuttons}>
+                    <Button
+                      href="https://finding-falcone-app.herokuapp.com/"
+                      target="_blank"
+                      outline
+                      color="secondary"
+                      className="shadow p-2 rounded button"
+                    >
+                      View Live Demo
+                    </Button>{' '}
+                    <Button
+                      href="https://github.com/newblues/finding-falcone-app"
+                      target="_blank"
+                      outline
+                      color="secondary"
+                      className="shadow p-2 rounded button"
+                    >
+                      View on Github
+                    </Button>{' '}
+                  </div>
+                </div>
+              )}
+            </Col>
+          </Row>
+
           {/* EShop App */}
           <Row className="rowPorfolio">
             <Col xs="12" md="6" className="d-flex justify-content-center align-items-center">
@@ -80,8 +173,8 @@ class Porfolio extends Component {
               ) : (
                 <div className="project">
                   <p className="text-center">
-                    "HairbnBarb" is a simple shopping cart prototype to shows how React components
-                    and Redux can be used to build a friendly user experience with instant visual
+                    "E-Shop" is a simple shopping cart prototype to shows how React components and
+                    Redux can be used to build a friendly user experience with instant visual
                     updates and scaleable code in ecommerce applications.
                   </p>
                   <p className="text-center">
